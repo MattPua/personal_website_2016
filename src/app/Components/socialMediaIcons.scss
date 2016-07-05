@@ -1,0 +1,14 @@
+@import './../other/_colours';
+.social-media-icons .fa-inverse {
+  color: black;
+}
+
+.social-media-icons{
+  display: inline;
+}
+
+.social-media-icons .fa{
+  &:hover, &:focus, &:active{
+    color: $red-highlight;
+  }
+}
