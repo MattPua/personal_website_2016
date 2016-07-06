@@ -5,6 +5,12 @@
 
 .social-media-icons{
   display: inline;
+  position: relative;
+}
+.social-media-icons a span{
+  &:hover, &:focus, &:active{
+    top: -5px;
+  }
 }
 
 .social-media-icons .fa{
