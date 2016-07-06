@@ -51,7 +51,7 @@ export default class Project extends React.Component{
               <span className="card-title center">{this.props.title}</span>
             </div>
             <div className="card-content white-text">
-              <p className='text'>{this.getAwards()}{this.props.text}</p>
+              <div className='text'>{this.getAwards()}{this.props.text}</div>
               {this.getTechnologyCards()}
               {this.getTags()}
               <div className='datetime right'><i className="fa fa-clock-o" aria-hidden="true"></i><span>{this.props.date}</span></div>
