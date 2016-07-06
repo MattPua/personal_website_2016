@@ -70,8 +70,8 @@ ProjectList.defaultProps = {
       tags: ['personal']
     },
     {
-      title:'Senior Engineering Design Project',
-      text:'Virtual reality project done in collaboration with the Centre of Addiction and Mental Health to attempt to assess and treat schizophrenia using virtual reality. Being used in clinical trials.',
+      title:'Final Year Design Project',
+      text:'VR Project done in collaboration with the Centre of Addiction and Mental Health. Attempts to assess and treat schizophrenia using virtual reality. Being used in clinical trials by CAMH.',
       awards: 'Top 10 of 80+ Design Projects',
       link: '',
       linkTitle:'',
@@ -79,6 +79,16 @@ ProjectList.defaultProps = {
       technologies: ['Unity','Oculus Headset','Virtual Reality'],
       date: '2015 - 2016',
       tags: ['undergrad']
+    },
+    {
+      title:'Hippo',
+      text:'Android App to help those in crisis situation. Submission for UofT Hacks 2016.',
+      link: 'https://github.com/re-mint/uofthacks2016',
+      linkTitle:'GitHub',
+      img:'/public/images/hippo.jpg',
+      technologies: ['Android','Java'],
+      date: 'Winter 2016',
+      tags: ['hackathon']
     },
     {
       title:'VidulyNoted',
@@ -97,7 +107,7 @@ ProjectList.defaultProps = {
       link: 'https://corporate.knowroaming.com/',
       linkTitle:'Product Link',
       img:'/public/images/corporateknowroaming.jpg',
-      technologies: ['Java','Coffeescript','PHP'],
+      technologies: ['Coffeescript','PHP','Stripe','SASS'],
       date: '2014 - 2015',
       tags: ['work']
     },
@@ -107,7 +117,7 @@ ProjectList.defaultProps = {
       link: 'https://www.knowroaming.com/order/order.php',
       linkTitle:'Product Link',
       img:'/public/images/orderknowroaming.jpg',
-      technologies: ['Java','Coffeescript','PHP'],
+      technologies: ['Stripe','PayPal','Coffeescript','PHP'],
       date: 'Summer 2015',
       tags: ['work']
     },

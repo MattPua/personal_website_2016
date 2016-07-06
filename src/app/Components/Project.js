@@ -22,7 +22,7 @@ export default class Project extends React.Component{
     if (this.props.awards!='')
       return(
         <p className='awards'>
-          <i className="fa fa-trophy" aria-hidden="true"></i><span className='award'>{this.props.awards}</span>
+          <i className="fa fa-trophy" aria-hidden="true"></i><span className='award'><strong>{this.props.awards}</strong></span>
         </p>
       );
     else return '';
@@ -51,8 +51,7 @@ export default class Project extends React.Component{
               <span className="card-title center">{this.props.title}</span>
             </div>
             <div className="card-content white-text">
-              {this.getAwards()}
-              <p className=''>{this.props.text}</p>
+              <p className='text'>{this.getAwards()}{this.props.text}</p>
               {this.getTechnologyCards()}
               {this.getTags()}
               <div className='datetime right'><i className="fa fa-clock-o" aria-hidden="true"></i><span>{this.props.date}</span></div>

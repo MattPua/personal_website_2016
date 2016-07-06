@@ -22,17 +22,7 @@
     min-height: 340px;
   }
 }
-.project-container .card-content {
-  @media(max-width: $size-s-max){
-    min-height: 220px;
-  }
-  @media (min-width: $size-m-min) and (max-width:$size-m-max){
-    min-height: 250px;
-  }
-  @media(min-width: $size-l-min){
-    min-height: 265px;
-  }
-}
+
 .project-container .card .card-image .card-title {
   background-color: rgba(0,0,0,0.71);
   width: 100%;
@@ -95,4 +85,26 @@
 .project-container .card .datetime {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+.project-container .card .text {
+  @media (min-width: $size-l-min){
+    max-height: 115px;
+    height: 115px;
+  }
+  @media (min-width: $size-m-min) and (max-width:$size-m-max){
+    max-height: 100px;
+    height: 100px;
+  }
+  overflow: auto;
+}
+.project-container .card-content {
+  @media(max-width: $size-s-max){
+    min-height: 220px;
+  }
+  @media (min-width: $size-m-min) and (max-width:$size-m-max){
+    min-height: 250px;
+  }
+  @media(min-width: $size-l-min){
+    min-height: 270px;
+  }
 }
