@@ -71,13 +71,13 @@ ProjectList.defaultProps = {
     },
     {
       title:'Senior Engineering Design Project',
-      text:'Virtual reality project done in collaboration with the Centre of Addiction and Mental Health to attempt to assess and treat schizophrenia using virtual reality.',
+      text:'Virtual reality project done in collaboration with the Centre of Addiction and Mental Health to attempt to assess and treat schizophrenia using virtual reality. Being used in clinical trials.',
       awards: 'Top 10 of 80+ Design Projects',
       link: '',
       linkTitle:'',
       img:'',
-      technologies: ['Unity'],
-      date: '2015-2016',
+      technologies: ['Unity','Oculus Headset','Virtual Reality'],
+      date: '2015 - 2016',
       tags: ['undergrad']
     },
     {
@@ -98,7 +98,7 @@ ProjectList.defaultProps = {
       linkTitle:'Product Link',
       img:'/public/images/corporateknowroaming.jpg',
       technologies: ['Java','Coffeescript','PHP'],
-      date: '2014-2015',
+      date: '2014 - 2015',
       tags: ['work']
     },
     {
@@ -113,10 +113,10 @@ ProjectList.defaultProps = {
     },
     {
       title:'Slackbot Gymbro',
-      text:'Simple Slack chatbot that encourages members to get active',
+      text:'Simple Slack chatbot that encourages members to get active throughout the day.',
       link: 'https://github.com/MattPua/slackbot_gymbro',
       linkTitle:'GitHub Repo',
-      img:'',
+      img:'/public/images/slackbot.jpg',
       technologies: ['Python','Slack API'],
       date: 'Summer 2015',
       tags: ['personal']
@@ -124,10 +124,10 @@ ProjectList.defaultProps = {
     {
       title:'BitsPlease',
       awards: '1st Place Apprentice Hacker',
-      text:"Children's learning game in HTML for the Koding Global Hackathon 2014",
+      text:"Children's learning game in HTML for the Koding Global Hackathon 2014.",
       link: 'https://www.koding.com/blog/2014/12/winning-hackers/',
       linkTitle:'Koding Blog Post',
-      img:'',
+      img:'/public/images/bitsplease.jpg',
       technologies: ['CoffeeScript','LESS'],
       date: 'Winter 2014',
       tags: ['hackathon']

@@ -23,11 +23,14 @@
   }
 }
 .project-container .card-content {
+  @media(max-width: $size-s-max){
+    min-height: 220px;
+  }
   @media (min-width: $size-m-min) and (max-width:$size-m-max){
-    min-height: 230px;
+    min-height: 250px;
   }
   @media(min-width: $size-l-min){
-    min-height: 245px;
+    min-height: 265px;
   }
 }
 .project-container .card .card-image .card-title {
@@ -84,4 +87,12 @@
   .chip {
     margin: 3px;
   }
+}
+
+.project-container .card .datetime i{
+  margin-right: 5px;
+}
+.project-container .card .datetime {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }

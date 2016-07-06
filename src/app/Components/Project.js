@@ -55,7 +55,7 @@ export default class Project extends React.Component{
               <p className=''>{this.props.text}</p>
               {this.getTechnologyCards()}
               {this.getTags()}
-              <div className='datetime'><i className="fa fa-clock-o" aria-hidden="true"></i><span>{this.props.date}</span></div>
+              <div className='datetime right'><i className="fa fa-clock-o" aria-hidden="true"></i><span>{this.props.date}</span></div>
             </div>
             <div className="card-action">
               <a href={this.props.link} target="_blank">{this.props.linkTitle}</a>
