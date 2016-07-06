@@ -90,12 +90,22 @@ footer.page-footer {
   z-index: 10; }
   .project-container .card .tag.tag-work {
     color: #EED029; }
+    .project-container .card .tag.tag-work:hover {
+      color: #ffb102; }
+  .project-container .card .tag.tag-undergrad:hover {
+    color: #ffb102; }
   .project-container .card .tag.tag-personal {
     color: #26B2E0; }
+    .project-container .card .tag.tag-personal:hover {
+      color: #ffb102; }
   .project-container .card .tag.tag-startup {
     color: #26E07C; }
+    .project-container .card .tag.tag-startup:hover {
+      color: #ffb102; }
   .project-container .card .tag.tag-hackathon {
     color: #8B0000; }
+    .project-container .card .tag.tag-hackathon:hover {
+      color: #ffb102; }
 
 .project-container .card .tech-chips {
   background-color: rgba(0, 0, 0, 0.25);

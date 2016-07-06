@@ -75,7 +75,7 @@ ProjectList.defaultProps = {
       awards: 'Top 10 of 80+ Design Projects',
       link: '',
       linkTitle:'',
-      img:'',
+      img:'/public/images/capstone.jpg',
       technologies: ['Unity','Oculus Headset','Virtual Reality'],
       date: '2015 - 2016',
       tags: ['undergrad']

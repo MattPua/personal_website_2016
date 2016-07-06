@@ -44,19 +44,33 @@
   z-index: 10;
 
   &.tag-work{
+    &:hover{
+      color: $orange-highlight;
+    }
     color: $yellow-highlight;
   }
 
   &.tag-undergrad{
-
+    &:hover{
+      color:$orange-highlight;
+    }
   }
   &.tag-personal{
+    &:hover{
+      color: $orange-highlight;
+    }
     color: $blue-highlight;
   }
   &.tag-startup{
+    &:hover{
+      color: $orange-highlight;
+    }
     color:$green-highlight;
   }
   &.tag-hackathon{
+    &:hover{
+      color: $orange-highlight;
+    }
     color:$red-highlight;
   }
 }
