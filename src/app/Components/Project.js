@@ -1,6 +1,9 @@
 import './project.scss';
 export default class Project extends React.Component{
   constructor(props){super(props);}
+  componentDidMount(){
+    $(this.refs.tag).tooltip();
+  }
 
   getTechnologyCards(){
     let cards = [];
@@ -11,7 +14,7 @@ export default class Project extends React.Component{
         </div>
       );
     }
-    return(<p>{cards}</p>);
+    return(<div>{cards}</div>);
   }
 
   getAwards(){
@@ -25,14 +28,15 @@ export default class Project extends React.Component{
   }
   getTags(){
     let tags = [];
-    for (let tech of this.props.tags){
+    for (let tag of this.props.tags){
       tags.push(
-        <div className='chip'>
-          {tech}
-        </div>
+        <span ref='tag' className={'tooltipped fa-stack tag tag-'+tag} data-position="top" data-delay="50" data-tooltip={tag + " project"}>
+          <i className="fa fa-bookmark fa-stack-1x" aria-hidden="true"></i>
+          <i className="fa fa-square-o fa-stack-2x"></i>
+        </span>
       );
     }
-    return (<p>{tags}</p>);
+    return (<div>{tags}</div>);
   }
   render(){
     return(
@@ -40,7 +44,9 @@ export default class Project extends React.Component{
         <div className='project col s12 m4 l3'>
           <div className="card blue-grey darken-1 z-depth-2">
             <div className="card-image">
-              <img src={this.props.img} className='responsive-img'/>
+              <a href={this.props.link} target='_blank'>
+                <img src={this.props.img} className='responsive-img'/>
+              </a>
               <span className="card-title center">{this.props.title}</span>
             </div>
             <div className="card-content white-text">
@@ -48,6 +54,7 @@ export default class Project extends React.Component{
               <p className=''>{this.props.text}</p>
               {this.getTechnologyCards()}
               {this.getTags()}
+              <p>{this.props.date}</p>
             </div>
             <div className="card-action">
               <a href={this.props.link} target="_blank">{this.props.linkTitle}</a>

@@ -18,8 +18,8 @@ export default class ProjectList extends React.Component{
 
   render(){
     return(
-      <div className='project-list-container row'>
-        <div className='project-list col s12'>
+      <div className='project-list-container col s12'>
+        <div className='project-list row'>
           {this.getProjects()}
         </div>
       </div>
@@ -35,7 +35,7 @@ ProjectList.defaultProps = {
       link: '#',
       linkTitle:'GitHub Repo',
       img:'/public/images/stockTracker.jpg',
-      technologies: ['React','Yahoo API','Express','Materialize'],
+      technologies: ['React','Yahoo API','Materialize','MongoDB'],
       date: 'Summer 2016',
       tags: ['personal']
     },
@@ -45,7 +45,7 @@ ProjectList.defaultProps = {
       link: 'https://mattpua.github.io/getitdone/',
       linkTitle:'Live Demo',
       img:'/public/images/getitdone.jpg',
-      technologies: ['React','Bootstrap','SASS'],
+      technologies: ['React','Bootstrap','SASS','Firebase'],
       date: 'Summer 2016',
       tags: ['personal']
     },
@@ -72,13 +72,13 @@ ProjectList.defaultProps = {
     {
       title:'Senior Engineering Design Project',
       text:'Virtual reality project done in collaboration with the Centre of Addiction and Mental Health to attempt to assess and treat schizophrenia using virtual reality.',
-      awards: 'Top 10 of 80+ Design Projects in ECE',
+      awards: 'Top 10 of 80+ Design Projects',
       link: '',
       linkTitle:'',
       img:'',
       technologies: ['Unity'],
       date: '2015-2016',
-      tags: ['school']
+      tags: ['undergrad']
     },
     {
       title:'VidulyNoted',

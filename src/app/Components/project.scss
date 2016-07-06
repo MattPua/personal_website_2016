@@ -1,8 +1,52 @@
 @import './../other/_colours';
+@import './../other/_mediaQuery';
 .project-container .awards .fa {
   color: $yellow-highlight;
 }
 
 .project-container .awards .award {
   margin-left: 5px;
+}
+
+.project-container .card-image img {
+  max-height: 340px;
+  min-height: 340px;
+}
+.project-container .card-content {
+  @media (min-height: $size-md-min){
+    min-height: 220px;
+  }
+}
+.project-container .card .card-image .card-title {
+  background-color: rgba(0,0,0,0.71);
+  width: 100%;
+}
+.project-container .card {
+  border: 3px solid black;
+  position: relative;
+}
+.project-container .card .tag {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 10;
+
+  &.tag-work{
+    color: $yellow-highlight;
+  }
+
+  &.tag-undergrad{
+
+  }
+  &.tag-personal{
+    color: $blue-highlight;
+  }
+  &.tag-startup{
+    color:$green-highlight;
+  }
+  &.tag-hackathon{
+    color:$red-highlight;
+  }
 }
