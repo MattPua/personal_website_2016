@@ -55,7 +55,7 @@ ProjectList.defaultProps = {
       link: 'https://flexingdream.github.io/aframe_demo/',
       linkTitle:'Live Demo',
       img:'/public/images/vrdemo.jpg',
-      technologies: ['React','A-Frame','VR'],
+      technologies: ['React','A-Frame','Virtual Reality'],
       date: 'Summer 2016',
       tags: ['startup']
     },
@@ -66,7 +66,7 @@ ProjectList.defaultProps = {
       linkTitle:'Model Gallery',
       img:'/public/images/sketchup.jpg',
       technologies: ['Sketchup'],
-      date: 'Present',
+      date: 'Ongoing',
       tags: ['personal']
     },
     {

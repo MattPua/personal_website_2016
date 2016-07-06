@@ -10,11 +10,12 @@ export default class Project extends React.Component{
     for (let tech of this.props.technologies){
       cards.push(
         <div className='chip'>
+          <i className="fa fa-star" aria-hidden="true"></i>
           {tech}
         </div>
       );
     }
-    return(<div>{cards}</div>);
+    return(<div className='tech-chips'><p>Technology Used:</p>{cards}</div>);
   }
 
   getAwards(){
@@ -41,7 +42,7 @@ export default class Project extends React.Component{
   render(){
     return(
       <div className='project-container'>
-        <div className='project col s12 m4 l3'>
+        <div className='project col s12 m6 l3'>
           <div className="card blue-grey darken-1 z-depth-2">
             <div className="card-image">
               <a href={this.props.link} target='_blank'>
@@ -54,7 +55,7 @@ export default class Project extends React.Component{
               <p className=''>{this.props.text}</p>
               {this.getTechnologyCards()}
               {this.getTags()}
-              <p>{this.props.date}</p>
+              <div className='datetime'><i className="fa fa-clock-o" aria-hidden="true"></i><span>{this.props.date}</span></div>
             </div>
             <div className="card-action">
               <a href={this.props.link} target="_blank">{this.props.linkTitle}</a>
