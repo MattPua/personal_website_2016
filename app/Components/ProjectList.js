@@ -1,5 +1,5 @@
 import Project from './project';
-const IMAGE_LOCATION ='/personal_website_2016/public/images/';
+const IMAGE_LOCATION ='/public/images/';
 export default class ProjectList extends React.Component{
 
   constructor(props){
