@@ -1,4 +1,5 @@
 import Project from './project';
+const IMAGE_LOCATION ='/public/images/';
 export default class ProjectList extends React.Component{
 
   constructor(props){
@@ -34,7 +35,7 @@ ProjectList.defaultProps = {
       text:'Portfolio tracking web app compatible with mobile to keep track of a portfolio of stocks using the Yahoo Finance Stocks API.',
       link: '#',
       linkTitle:'GitHub Repo',
-      img:'/public/images/stockTracker.jpg',
+      img:IMAGE_LOCATION+'stockTracker.jpg',
       technologies: ['React','Yahoo API','Materialize','MongoDB'],
       date: 'Summer 2016',
       tags: ['personal']
@@ -44,7 +45,7 @@ ProjectList.defaultProps = {
       text:'A ToDo List which focuses on the calendar and getting soon to due things done first.',
       link: 'https://mattpua.github.io/getitdone/',
       linkTitle:'Live Demo',
-      img:'/public/images/getitdone.jpg',
+      img:IMAGE_LOCATION+'getitdone.jpg',
       technologies: ['React','Bootstrap','SASS','Firebase'],
       date: 'Summer 2016',
       tags: ['personal']
@@ -54,7 +55,7 @@ ProjectList.defaultProps = {
       text:'A VR App made using Aframe and React to bring music and visuals together in VR. Compatible with newer gen mobile phones. Submission for the 2016 UTEST Accelerator Program.',
       link: 'https://flexingdream.github.io/aframe_demo/',
       linkTitle:'Live Demo',
-      img:'/public/images/vrdemo.jpg',
+      img:IMAGE_LOCATION+'vrdemo.jpg',
       technologies: ['React','A-Frame','Virtual Reality'],
       date: 'Summer 2016',
       tags: ['startup']
@@ -64,7 +65,7 @@ ProjectList.defaultProps = {
       text:'Collection of 3D models built in Google Sketchup in my free time.',
       link: 'https://3dwarehouse.sketchup.com/by/mattpua',
       linkTitle:'Model Gallery',
-      img:'/public/images/sketchup.jpg',
+      img:IMAGE_LOCATION+'sketchup.jpg',
       technologies: ['Sketchup'],
       date: 'Ongoing',
       tags: ['personal']
@@ -75,7 +76,7 @@ ProjectList.defaultProps = {
       awards: 'Top 10 of 80+ Design Projects',
       link: '',
       linkTitle:'',
-      img:'/public/images/capstone.jpg',
+      img:IMAGE_LOCATION+'capstone.jpg',
       technologies: ['Unity','Oculus Headset','Virtual Reality'],
       date: '2015 - 2016',
       tags: ['undergrad']
@@ -85,7 +86,7 @@ ProjectList.defaultProps = {
       text:'Android App to help those in crisis situation. Submission for UofT Hacks 2016.',
       link: 'https://github.com/re-mint/uofthacks2016',
       linkTitle:'GitHub',
-      img:'/public/images/hippo.jpg',
+      img:IMAGE_LOCATION+'hippo.jpg',
       technologies: ['Android','Java'],
       date: 'Winter 2016',
       tags: ['hackathon']
@@ -96,7 +97,7 @@ ProjectList.defaultProps = {
       text:'VidulyNoted is a better way for team members to collaborate together during remote or large meetings by being able to transcribe live video calls. Submission for MHacks 6.',
       link: 'http://devpost.com/software/rebdbully-frontend',
       linkTitle:'DevPost Submission',
-      img:'/public/images/vidulynoted.jpg',
+      img:IMAGE_LOCATION+'vidulynoted.jpg',
       technologies: ['Firebase','jQuery'],
       date: 'Fall 2015',
       tags: ['hackathon']
@@ -106,7 +107,7 @@ ProjectList.defaultProps = {
       text:'The Corporate Portal is the business solutions product for KnowRoaming corporate customers. Designed and built the front and back-end during my co-op term at KnowRoaming.',
       link: 'https://corporate.knowroaming.com/',
       linkTitle:'Product Link',
-      img:'/public/images/corporateknowroaming.jpg',
+      img:IMAGE_LOCATION+'corporateknowroaming.jpg',
       technologies: ['Coffeescript','PHP','Stripe','SASS'],
       date: '2014 - 2015',
       tags: ['work']
@@ -116,7 +117,7 @@ ProjectList.defaultProps = {
       text:'Online retail site allowing customers to buy the KnowRoaming product. Designed and built the front and backend systems during my co-op term at KnowRoaming.',
       link: 'https://www.knowroaming.com/order/order.php',
       linkTitle:'Product Link',
-      img:'/public/images/orderknowroaming.jpg',
+      img:IMAGE_LOCATION+'orderknowroaming.jpg',
       technologies: ['Stripe','PayPal','Coffeescript','PHP'],
       date: 'Summer 2015',
       tags: ['work']
@@ -126,7 +127,7 @@ ProjectList.defaultProps = {
       text:'Simple Slack chatbot that encourages members to get active throughout the day.',
       link: 'https://github.com/MattPua/slackbot_gymbro',
       linkTitle:'GitHub Repo',
-      img:'/public/images/slackbot.jpg',
+      img:IMAGE_LOCATION+'slackbot.jpg',
       technologies: ['Python','Slack API'],
       date: 'Summer 2015',
       tags: ['personal']
@@ -137,7 +138,7 @@ ProjectList.defaultProps = {
       text:"Children's learning game in HTML for the Koding Global Hackathon 2014.",
       link: 'https://www.koding.com/blog/2014/12/winning-hackers/',
       linkTitle:'Koding Blog Post',
-      img:'/public/images/bitsplease.jpg',
+      img:IMAGE_LOCATION+'bitsplease.jpg',
       technologies: ['CoffeeScript','LESS'],
       date: 'Winter 2014',
       tags: ['hackathon']
@@ -147,7 +148,7 @@ ProjectList.defaultProps = {
       text:'InsiteUofT is a way for peers to connect with each other to help prepare for interviews. Submission for UofT Hacks 2014.',
       link: 'https://insiteuoft.herokuapp.com/',
       linkTitle:'Live Demo',
-      img:'/public/images/insiteuoft.jpg',
+      img:IMAGE_LOCATION+'insiteuoft.jpg',
       technologies: ['Ruby on Rails','SASS'],
       date: 'Spring 2014',
       tags: ['hackathon']
