@@ -1,5 +1,4 @@
 import './profile.scss';
-import ProfileCard from './ProfileCard';
 export default class Profile extends React.Component{
   constructor(props){
     super(props);

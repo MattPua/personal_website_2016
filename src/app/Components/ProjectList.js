@@ -21,6 +21,7 @@ export default class ProjectList extends React.Component{
     return(
       <div className='project-list-container col s12'>
         <div className='project-list row'>
+          <h3 className='center white-text'>My Projects</h3>
           {this.getProjects()}
         </div>
       </div>
