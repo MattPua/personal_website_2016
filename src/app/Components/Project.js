@@ -43,7 +43,7 @@ export default class Project extends React.Component{
     return(
       <div className='project-container'>
         <div className='project col s12 m6 l3'>
-          <div className="card blue-grey darken-1 z-depth-2">
+          <div className="card z-depth-2">
             <div className="card-image">
               <a href={this.props.link} target='_blank'>
                 <img src={this.props.img} className='responsive-img'/>
