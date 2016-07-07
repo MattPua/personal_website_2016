@@ -10,7 +10,7 @@ export default class Navbar extends React.Component{
   render(){
     return(
       <nav className='navbar-container row'>
-        <div className={"nav-wrapper " + this.props.className}>
+        <div className={'nav-wrapper ' + this.props.className}>
           <a href="#!" className="brand-logo center">Portfolio</a>
         </div>
       </nav>
@@ -21,4 +21,5 @@ export default class Navbar extends React.Component{
 Navbar.defaultProps = {
   className: '',
   username: null,
+  signout: null,
 };
