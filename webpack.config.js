@@ -11,7 +11,7 @@ var PUBLIC_PATH = IS_PRODUCTION ? '/personal_website_2016/' : '';
 if (IS_PRODUCTION) console.log("----------------PRODUCTION MODE--------------------");
 else console.log('-------------------DEVELOPMENT MODE--------------------');
 var plugins = [
-  new ExtractTextPlugin("style.css", { allChunks: true }),
+  new ExtractTextPlugin("style.css", { allChunks: false }),
   // Always expose NODE_ENV to webpack, you can now use `process.env.NODE_ENV`
   // inside your code for any environment checks; UglifyJS will automatically
   // drop any unreachable code.
@@ -140,7 +140,7 @@ const config = {
     }
   },
   eslint: {
-    //reporter: require("eslint-friendly-formatter"),
+    reporter: require("eslint-friendly-formatter"),
     quiet: true,
     failOnError: true,
     failOnWarning: false,

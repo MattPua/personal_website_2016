@@ -25,7 +25,7 @@ export default class Project extends React.Component{
           <i className="fa fa-trophy" aria-hidden="true"></i><span className='award'><strong>{this.props.awards}</strong></span>
         </p>
       );
-    else return '';
+    return '';
   }
   getTags(){
     let tags = [];
