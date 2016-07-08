@@ -1,5 +1,6 @@
 import Project from './project';
-const IMAGE_LOCATION ='/personal_website_2016/public/images/';
+import config from './../../../_config';
+const IMAGE_LOCATION = config.BASE_URL+'public/images/';
 export default class ProjectList extends React.Component{
 
   constructor(props){
@@ -21,6 +22,7 @@ export default class ProjectList extends React.Component{
     return(
       <div className='project-list-container col s12'>
         <div className='project-list row'>
+          <h3 className='center white-text'>My Projects</h3>
           {this.getProjects()}
         </div>
       </div>

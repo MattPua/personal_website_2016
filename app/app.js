@@ -4,7 +4,6 @@ import Footer from './Components/Footer';
 import Profile from './Components/Profile';
 import Banner from './Components/Banner';
 import ProjectList from './Components/ProjectList';
-import Info from './Components/Info';
 import './app.scss';
 // Note: need this for materialize other wise won't work properly
 var $ = window.jQuery = require('jquery');
@@ -25,10 +24,8 @@ class App extends React.Component{
         </header>
         <main className='row'>
           <Banner/>
-          <div className=''>
-            <Profile/>
-            <ProjectList/>
-          </div>
+          <Profile/>
+          <ProjectList/>
         </main>
         <Footer/>
       </div>

@@ -1,11 +1,13 @@
 @import './../other/_colours';
 @import './../other/_mediaQuery';
 .banner-container{
-  @media (min-width: $size-md-min){
+  @media (min-width: $size-lg-min){
     width: 50%;
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 20px;
+  }
+  @media(max-width:$size-s-max){
   }
   padding: 15px;
   margin-top: 10px;
