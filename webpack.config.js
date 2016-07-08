@@ -3,10 +3,13 @@ var path = require('path');
 
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var autoprefixer = require('autoprefixer');
+var settings = require('./_config.js');
+
+
 var BUILD_DIR = path.resolve(__dirname, './build');
 var APP_DIR = path.resolve(__dirname, 'src/app');
 var IS_PRODUCTION = process.env.NODE_ENV === 'production';
-var PUBLIC_PATH = IS_PRODUCTION ? '/personal_website_2016/' : '';
+var PUBLIC_PATH = IS_PRODUCTION ? settings.BASE_URL : '';
 
 if (IS_PRODUCTION) console.log("----------------PRODUCTION MODE--------------------");
 else console.log('-------------------DEVELOPMENT MODE--------------------');
@@ -141,7 +144,7 @@ const config = {
   },
   eslint: {
     reporter: require("eslint-friendly-formatter"),
-    quiet: true,
+    quiet: true, //disables showing warnings
     failOnError: true,
     failOnWarning: false,
     emitError: true,

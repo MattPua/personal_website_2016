@@ -1,3 +1,4 @@
+import config from  './../../../_config.js';
 class AppHelper{
   static notInitialized(){
     console.error('[INIT ERROR] IS NOT INITIALIZED!');
@@ -37,7 +38,7 @@ class AppHelper{
 
   static ajaxConfig(url,type,data){
     return {
-      url: url,
+      url: config.BASE_URL + url,
       type: type,
       dataType: "json",
       data:data,

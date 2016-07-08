@@ -1,5 +1,6 @@
 import Project from './project';
-const IMAGE_LOCATION ='/public/images/';
+import config from './../../../_config';
+const IMAGE_LOCATION = config.BASE_URL+'public/images/';
 export default class ProjectList extends React.Component{
 
   constructor(props){
