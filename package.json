@@ -4,6 +4,8 @@
   "description": "",
   "main": "src/client/app.js",
   "scripts": {
+    "server-prep": "npm run production &&  rm -rf deploy && cp -r src deploy && cp -f index.html build/* deploy",
+    "server-deploy": "git-directory-deploy --directory deploy --branch server",
     "production": "cross-env NODE_ENV=production webpack -p",
     "preghpages": "npm run production && rm -rf gh-pages && cp -r src gh-pages && cp index.html build/* gh-pages",
     "ghpages": "npm run preghpages && ghpages -p gh-pages",
@@ -41,6 +43,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "ghpages": "0.0.8",
+    "git-directory-deploy": "^1.5.0",
     "html-loader": "^0.4.3",
     "json-loader": "^0.5.4",
     "jsx-loader": "^0.13.2",
