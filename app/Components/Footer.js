@@ -11,7 +11,7 @@ export default class Footer extends React.Component{
         <div className="footer-copyright">
           <div className="container">
             Made by <strong>Matt Pua</strong>
-            <SocialMediaIcons/>
+            <SocialMediaIcons className='right'/>
           </div>
         </div>
       </footer>
