@@ -4,6 +4,7 @@ import Footer from './Components/Footer';
 import Profile from './Components/Profile';
 import Banner from './Components/Banner';
 import ProjectList from './Components/ProjectList';
+import Externals from './Componenents/Externals';
 import './app.scss';
 // Note: need this for materialize other wise won't work properly
 var $ = window.jQuery = require('jquery');
@@ -26,6 +27,7 @@ class App extends React.Component{
           <Banner/>
           <Profile/>
           <ProjectList/>
+          <Externals/>
         </main>
         <Footer/>
       </div>
