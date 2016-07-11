@@ -34,7 +34,7 @@ ProjectList.defaultProps = {
     {
       title:'Personal Portfolio',
       text:'My updated porfolio website.',
-      link: 'www.matthewpua.ca',
+      link: 'http://www.matthewpua.ca',
       linkTitle:'Website',
       img:IMAGE_LOCATION+'portfolio.jpg',
       technologies: ['React','Materialize','Digital Ocean'],
