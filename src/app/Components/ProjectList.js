@@ -32,10 +32,20 @@ export default class ProjectList extends React.Component{
 ProjectList.defaultProps = {
   projects: [
     {
+      title:'Personal Portfolio',
+      text:'My updated porfolio website.',
+      link: 'matthewpua.ca',
+      linkTitle:'Website',
+      img:IMAGE_LOCATION+'portfolio.jpg',
+      technologies: ['React','Materialize','Digital Ocean'],
+      date: 'Summer 2016',
+      tags: ['personal']
+    },
+    {
       title:'Portfolio Tracker',
       text:'Portfolio tracking web app compatible with mobile to keep track of a portfolio of stocks using the Yahoo Finance Stocks API.',
-      link: '#',
-      linkTitle:'GitHub Repo',
+      link: 'http://matthewpua.ca/stockTracker/',
+      linkTitle:'Live Demo',
       img:IMAGE_LOCATION+'stockTracker.jpg',
       technologies: ['React','Yahoo API','Materialize','MongoDB'],
       date: 'Summer 2016',
